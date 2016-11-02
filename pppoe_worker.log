@@ -1,0 +1,1333 @@
+2016-05-06 08:35:07,389 - root       - INFO Waiting for try #1
+2016-05-06 08:36:15,487 - root       - ERROR Traceback (most recent call last):
+  File "pppcheck.py", line 264, in run_ppp
+    doCheck(account, iface)
+  File "pppcheck.py", line 124, in doCheck
+    mac=account['mac'][iface],
+TypeError: string indices must be integers, not str
+
+2016-05-06 08:39:31,552 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.120
+2016-05-06 08:39:36,688 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:39:41,758 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:39:47,571 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 08:39:48,857 - root       - INFO Waiting for try #1
+2016-05-06 08:41:49,016 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.120
+2016-05-06 08:41:54,128 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:41:59,198 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:42:04,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:42:05,036 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 08:42:06,384 - root       - INFO Waiting for try #2
+2016-05-06 08:42:53,491 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.721
+2016-05-06 08:42:58,623 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:43:03,683 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:43:08,784 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:43:09,512 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 08:43:10,907 - root       - INFO Waiting for try #1
+2016-05-06 08:45:11,070 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.721
+2016-05-06 08:45:16,204 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:46:18,559 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 08:46:23,704 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:46:28,783 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:46:33,875 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:46:34,582 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 08:50:19,536 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 08:50:24,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:50:29,858 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:50:34,938 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:50:35,737 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 08:50:41,847 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 08:50:46,958 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:50:52,028 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 08:50:57,867 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 09:51:55,720 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 09:52:00,838 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 09:52:05,908 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 09:52:10,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 09:52:11,741 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:19:19,359 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:19:24,458 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:19:29,538 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:19:34,608 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:19:35,379 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:22:28,039 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:22:33,178 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:22:38,248 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:22:43,328 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:22:44,060 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:24:23,972 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:24:29,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:24:34,408 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:24:39,488 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:24:39,991 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:25:06,014 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:25:11,128 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:25:16,198 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:25:21,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:25:22,035 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:26:05,542 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:26:10,638 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:26:15,718 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:26:20,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:26:21,563 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:27:36,228 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:27:41,338 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:27:46,408 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:27:51,488 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:27:52,249 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:27:53,507 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:27:58,628 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:03,698 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:08,768 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:09,530 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:28:10,797 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:28:15,928 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:21,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:26,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:26,820 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:28:28,096 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:28:33,198 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:38,264 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:43,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:44,118 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:28:45,387 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:28:50,488 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:28:55,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:00,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:01,406 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:29:02,667 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:29:07,768 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:12,838 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:17,928 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:18,687 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:29:19,959 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:29:25,058 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:30,128 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:35,208 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:35,982 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:29:37,237 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:29:42,353 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:47,438 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:52,518 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:29:53,258 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:29:54,537 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:29:59,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:04,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:09,808 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:10,558 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:30:11,816 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:30:16,908 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:21,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:27,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:27,834 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:30:29,107 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:30:34,218 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:39,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:44,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:45,128 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:30:46,413 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:30:51,528 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:30:56,598 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:01,665 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:02,432 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:31:03,697 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:31:08,818 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:13,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:18,968 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:19,721 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:31:20,987 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:31:26,138 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:31,208 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:36,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:37,008 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:31:38,277 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:31:43,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:48,458 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:53,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:31:54,299 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:31:55,587 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:32:00,708 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:05,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:10,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:11,608 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:32:12,867 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:32:17,998 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:23,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:28,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:28,886 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:32:30,136 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:32:35,228 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:40,298 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:45,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:46,156 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:32:47,427 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:32:52,558 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:32:57,627 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:02,698 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:03,446 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:33:04,708 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:33:09,828 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:14,898 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:19,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:20,726 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:33:22,007 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:33:27,138 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:32,208 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:37,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:38,026 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:33:39,307 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:33:44,418 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:49,488 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:54,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:33:55,330 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:33:56,607 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:34:01,727 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:06,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:11,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:12,630 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:34:13,907 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:34:19,018 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:24,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:29,168 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:29,926 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:34:31,207 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:34:36,328 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:41,398 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:46,468 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:47,227 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:34:48,501 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:34:53,608 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:34:58,688 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:03,765 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:04,520 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:35:05,788 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:35:10,908 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:15,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:21,058 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:21,809 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:35:23,087 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:35:28,198 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:33,268 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:38,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:39,111 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:35:40,387 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:35:45,498 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:50,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:55,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:35:56,407 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:35:57,667 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:36:02,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:07,866 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:12,959 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:13,689 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:36:14,957 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:36:20,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:25,138 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:30,218 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:30,980 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:36:32,237 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:36:37,368 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:42,438 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:47,518 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:48,257 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:36:49,527 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:36:54,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:36:59,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:04,808 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:05,551 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:37:06,807 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:37:11,937 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:17,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:22,098 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:22,830 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:37:24,098 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:37:29,198 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:34,278 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:39,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:40,119 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:37:41,388 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:37:46,488 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:51,558 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:56,628 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:37:57,409 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:37:58,668 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:38:03,768 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:08,838 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:13,925 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:14,690 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:38:15,957 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:38:21,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:26,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:31,238 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:31,977 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:38:33,258 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:38:38,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:43,458 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:48,538 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:38:49,277 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:38:50,537 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:38:55,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:00,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:05,808 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:06,560 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:39:07,827 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:39:12,958 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:18,025 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:23,098 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:23,847 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:39:25,107 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:39:30,208 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:35,298 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:40,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:41,129 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:39:42,407 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:39:47,518 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:52,588 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:57,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:39:58,430 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:39:59,697 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:40:04,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:09,868 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:14,948 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:15,717 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:40:16,987 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:40:22,105 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:27,188 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:32,268 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:33,009 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:40:34,267 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:40:39,398 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:44,468 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:49,538 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:40:50,291 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:40:51,567 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:40:56,668 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:01,738 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:06,818 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:07,590 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:41:08,858 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:41:13,978 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:19,048 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:24,123 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:24,877 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:41:26,137 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:41:31,258 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:36,328 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:41,398 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:42,157 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:41:43,427 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:41:48,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:53,638 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:58,718 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:41:59,450 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:42:00,727 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:42:05,838 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:10,908 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:15,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:16,750 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:42:18,007 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:42:23,108 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:28,198 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:33,267 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:34,030 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:42:35,297 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:42:40,408 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:45,498 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:50,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:42:51,321 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:42:52,587 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:42:57,708 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:02,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:07,878 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:08,611 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:43:09,868 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:43:14,978 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:20,048 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:25,118 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:25,886 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:43:27,158 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:43:32,263 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:37,338 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:42,418 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:43,177 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:43:44,447 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:43:49,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:54,638 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:43:59,708 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:00,472 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:44:01,738 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:44:06,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:11,958 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:17,028 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:17,757 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:44:19,028 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:44:24,138 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:29,208 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:34,298 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:35,047 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:44:36,317 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:44:41,438 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:46,508 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:51,598 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:44:52,340 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:44:53,617 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:44:58,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:03,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:08,868 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:09,642 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:45:10,897 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:45:16,028 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:21,098 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:26,188 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:26,922 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:45:28,188 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:45:33,318 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:38,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:43,467 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:44,207 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:45:45,457 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:45:50,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:45:55,638 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:00,718 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:01,475 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:46:02,728 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:46:07,858 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:12,928 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:18,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:18,747 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:46:20,008 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:46:25,118 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:30,188 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:35,268 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:36,028 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:46:37,297 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:46:42,408 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:47,487 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:52,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:46:53,316 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:46:54,567 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:46:59,668 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:04,738 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:09,828 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:10,591 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:47:11,857 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:47:16,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:22,058 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:27,138 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:27,876 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:47:29,128 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:47:34,228 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:39,298 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:44,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:45,147 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:47:46,407 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:47:51,518 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:47:56,608 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:01,688 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:02,429 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:48:03,697 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:48:08,808 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:13,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:18,968 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:19,719 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:48:20,987 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:48:26,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:31,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:36,238 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:37,009 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:48:38,287 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:48:43,408 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:48,488 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:53,577 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:48:54,309 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:48:55,587 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:49:00,698 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:05,768 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:10,858 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:11,610 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:49:12,867 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:49:17,998 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:23,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:28,160 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:28,889 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:49:30,157 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:49:35,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:40,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:45,438 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:46,180 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:49:47,437 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:49:52,558 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:49:57,636 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:02,708 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:03,458 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:50:04,737 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:50:09,858 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:14,928 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:20,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:20,763 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:50:22,027 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:50:27,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:32,228 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:37,308 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:38,051 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:50:39,322 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:50:44,428 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:49,498 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:54,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:50:55,341 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:50:56,598 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:51:01,706 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:06,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:11,868 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:12,623 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:51:13,909 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:51:19,018 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:24,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:29,168 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:29,929 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:51:31,198 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:51:36,318 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:41,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:46,468 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:47,217 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:51:48,488 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:51:53,598 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:51:58,665 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:03,735 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:04,510 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:52:05,788 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:52:10,918 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:15,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:21,078 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:21,807 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:52:23,098 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:52:28,228 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:33,298 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:38,368 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:39,123 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:52:40,387 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:52:45,508 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:50,578 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:55,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:52:56,410 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:52:57,668 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:53:02,768 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:07,835 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:12,908 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:13,688 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:53:14,958 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:53:20,058 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:25,128 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:30,218 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:30,981 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:53:32,237 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:53:37,328 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:42,398 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:47,468 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:48,256 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:53:49,507 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:53:54,628 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:53:59,698 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:04,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:05,530 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:54:06,798 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:54:11,906 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:16,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:22,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:22,817 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:54:24,088 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:54:29,218 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:34,298 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:39,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:40,107 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:54:41,368 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:54:46,488 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:51,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:56,648 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:54:57,388 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:54:58,668 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:55:03,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:08,868 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:13,954 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:14,692 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:55:15,957 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:55:21,078 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:26,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:31,238 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:31,982 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:55:33,259 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:55:38,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:43,458 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:48,538 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:55:49,278 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:55:50,537 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:55:55,688 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:00,758 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:05,838 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:06,558 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:56:07,827 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:56:12,958 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:18,024 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:23,098 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:23,854 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:56:25,117 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:56:30,258 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:35,328 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:40,408 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:41,137 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:56:42,408 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:56:47,518 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:52,598 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:57,688 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:56:58,426 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:56:59,687 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:57:04,778 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:09,848 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:14,938 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:15,710 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:57:16,967 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:57:22,084 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:27,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:32,241 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:32,992 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:57:34,257 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:57:39,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:44,428 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:49,508 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:57:50,280 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:57:51,537 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:57:56,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:01,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:06,808 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:07,556 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:58:08,807 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:58:13,918 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:18,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:24,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:24,831 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:58:26,107 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:58:31,228 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:36,308 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:41,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:42,133 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:58:43,410 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:58:48,518 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:53,598 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:58,668 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:58:59,431 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:59:00,697 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:59:05,808 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:10,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:15,978 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:16,722 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:59:17,987 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:59:23,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:28,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:33,257 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:34,011 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:59:35,267 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:59:40,368 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:45,438 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:50,518 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 10:59:51,292 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 10:59:52,557 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 10:59:57,668 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:02,738 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:07,818 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:08,583 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:00:09,837 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:00:14,958 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:20,028 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:25,098 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:25,859 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:00:27,138 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:00:32,268 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:37,337 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:42,418 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:43,163 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:00:44,427 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:00:49,558 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:54,628 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:00:59,708 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:00,451 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:01:01,718 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:01:06,858 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:11,928 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:17,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:17,738 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:01:19,009 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:01:24,108 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:29,188 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:34,268 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:35,028 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:01:36,298 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:01:41,418 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:46,498 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:51,578 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:01:52,317 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:01:53,588 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:01:58,708 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:03,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:08,868 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:09,611 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:02:10,867 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:02:15,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:21,078 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:26,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:26,886 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:02:28,157 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:02:33,268 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:38,338 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:43,415 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:44,180 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:02:45,437 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:02:50,558 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:02:55,628 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:00,708 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:01,462 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:03:02,717 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:03:07,858 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:12,928 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:18,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:18,742 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:03:20,007 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:03:25,158 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:30,228 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:35,308 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:36,030 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:03:37,307 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:03:42,418 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:47,485 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:52,568 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:03:53,333 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:03:54,608 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:03:59,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:04,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:09,868 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:10,627 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:04:11,898 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:04:17,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:22,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:27,168 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:27,919 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:04:29,187 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:04:34,318 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:39,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:44,458 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:45,210 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:04:46,487 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:04:51,595 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:04:56,668 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:01,738 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:02,513 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:05:03,798 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:05:08,918 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:13,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:19,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:19,818 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:05:21,097 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:05:26,208 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:31,278 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:36,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:37,120 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:05:38,408 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:05:43,528 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:48,598 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:53,668 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:05:54,428 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:05:55,718 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:06:00,858 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:05,938 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:11,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:11,738 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:06:13,008 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:06:18,118 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:23,188 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:28,268 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:29,027 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:06:30,318 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:06:35,458 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:40,528 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:45,608 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:46,337 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:06:47,609 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:06:52,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:06:57,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:02,866 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:03,629 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:07:04,899 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:07:10,008 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:15,088 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:20,168 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:20,922 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:07:22,189 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:07:27,308 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:32,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:37,468 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:38,208 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:07:39,469 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:07:44,598 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:49,668 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:54,738 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:07:55,488 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:07:56,759 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:08:01,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:06,956 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:12,028 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:12,778 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:08:14,057 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:08:19,188 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:24,258 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:29,338 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:30,079 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:08:31,361 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:08:36,468 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:41,538 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:46,618 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:47,382 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:08:48,638 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:08:53,758 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:08:58,838 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:09:03,908 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-06 11:09:04,661 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:09:05,927 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-06 11:09:21,950 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-06 11:09:22,037 - root       - ERROR Traceback (most recent call last):
+  File "pppcheck.py", line 266, in run_ppp
+    doCheck(account, iface)
+  File "pppcheck.py", line 179, in doCheck
+    p.stop()
+  File "/home/pi/pppoe-checker/pppoe.py", line 748, in __exit__
+    self.terminate()
+  File "/home/pi/pppoe-checker/pppoe.py", line 740, in terminate
+    sendp(Ether(src=self.mac, dst=self.ac_mac)/PPPoE(sessionid=self.sess_id)/PPP(proto=LCP)/Raw(load='\x05\x02'+word(len('Goodbye')+4)+'Goodbye'), iface=self.iface, verbose=False)
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/sendrecv.py", line 267, in sendp
+    return __gen_send(conf.L2socket(iface=iface, *args, **kargs), x, inter=inter, loop=loop, count=count,
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/arch/linux.py", line 425, in __init__
+    _flush_fd(self.ins)
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/arch/linux.py", line 301, in _flush_fd
+    r,w,e = select([fd],[],[],0)
+ValueError: filedescriptor out of range in select()
+
+2016-05-09 08:30:13,872 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:30:18,988 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:30:24,058 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:30:29,128 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:30:29,896 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:30:31,167 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:30:36,284 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:00,677 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:31:05,778 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:10,848 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:15,918 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:16,697 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:31:17,967 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:31:23,098 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:28,168 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:33,238 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:33,991 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:31:35,246 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:31:40,338 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:45,408 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:50,477 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:31:51,265 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:31:52,536 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:31:57,628 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:02,698 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:07,788 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:08,555 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:32:09,797 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:32:14,928 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:19,998 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:25,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:25,817 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:32:27,106 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:32:32,218 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:37,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:42,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:43,129 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:32:44,366 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:32:49,478 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:54,557 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:32:59,628 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:00,389 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:33:01,666 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:33:06,758 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:11,828 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:16,898 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:17,686 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:33:18,938 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:33:24,048 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:29,118 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:34,198 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:34,957 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:33:36,196 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:33:41,288 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:46,358 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:51,428 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:33:52,218 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:33:53,476 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:33:58,596 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:03,678 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:08,758 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:09,495 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:34:10,737 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:34:15,838 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:20,908 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:25,978 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:26,756 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:34:28,007 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:34:33,128 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:38,208 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:43,278 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:44,030 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:34:45,317 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:34:50,418 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:34:55,498 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:00,574 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:01,336 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:35:02,597 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:35:07,728 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:12,798 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:17,888 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:18,623 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:35:19,888 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:35:24,998 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:30,068 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:35,138 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:35,909 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:35:37,206 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:35:42,318 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:47,388 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:52,458 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-05-09 08:35:53,225 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:35:54,497 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:36:04,604 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 08:36:05,714 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 08:36:06,844 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 08:40:37,144 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 08:40:45,264 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 08:40:46,373 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 08:40:47,473 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 08:50:29,495 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:50:45,515 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:50:46,777 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:51:02,802 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:51:04,057 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:51:09,154 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.112
+2016-05-09 08:51:12,423 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 08:51:13,597 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:51:23,884 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:51:25,062 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:51:35,313 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:51:36,498 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:51:43,793 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:51:44,967 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:52:00,987 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:52:02,237 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:52:12,493 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:52:13,666 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:52:18,764 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.112
+2016-05-09 08:52:22,013 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 08:52:23,189 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:52:31,314 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 08:52:34,603 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 08:52:35,787 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:52:43,043 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:52:44,218 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:52:54,503 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:52:55,688 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:53:00,814 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 08:53:01,923 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 08:53:05,253 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 08:53:06,428 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:53:22,345 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:53:35,603 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:53:36,787 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:53:44,083 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 08:53:45,269 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:54:01,302 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:54:02,556 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:54:18,581 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 08:54:19,827 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 08:54:27,933 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 08:54:29,033 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 08:54:30,173 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:14:50,894 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:14:58,994 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:15:00,094 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:15:01,214 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:15:25,466 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:15:35,733 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 09:15:35,735 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 09:15:35,736 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:17:03,879 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:17:14,123 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 09:17:14,125 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 09:17:14,126 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:18:43,146 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:18:53,383 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 09:18:53,385 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 09:18:53,386 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:19:50,538 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:19:59,655 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.202
+2016-05-09 09:20:01,755 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:20:02,854 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:22:59,220 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:23:15,240 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 09:23:41,159 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:23:47,285 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:23:49,405 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:23:55,724 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:23:55,725 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 09:24:10,996 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:24:20,115 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:24:26,434 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 09:24:26,436 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:24:26,437 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 09:25:09,475 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:25:25,495 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 09:25:47,040 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:26:03,061 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 09:26:07,908 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:26:23,929 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 09:27:09,217 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:27:25,237 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 09:27:26,365 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3002
+2016-05-09 09:27:33,486 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.202
+2016-05-09 09:27:42,775 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 09:27:42,776 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:27:42,777 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 09:27:49,945 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:28:06,255 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 09:28:06,257 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 09:28:06,258 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:28:06,258 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 09:28:07,336 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:28:17,465 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.13
+2016-05-09 09:28:20,565 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:28:23,706 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:28:26,865 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 09:29:46,448 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:30:02,468 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 09:30:03,637 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:30:13,776 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.13
+2016-05-09 09:30:16,885 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:30:19,996 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:30:23,169 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 09:32:40,514 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:32:50,626 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.202
+2016-05-09 09:32:53,726 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:32:56,856 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:32:59,999 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 09:33:06,899 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:33:14,026 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:33:17,155 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:33:20,246 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:37:45,058 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:37:55,186 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.202
+2016-05-09 09:37:58,315 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:38:01,416 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:43:44,629 - root       - ERROR Traceback (most recent call last):
+  File "pppcheck.py", line 288, in run_ppp
+    res = doCheck(account, iface)
+  File "pppcheck.py", line 187, in doCheck
+    if status == 0 and http(p, "http://google.com"):
+  File "pppcheck.py", line 118, in http
+    if isTCPSyn(p.recv_packet()):
+  File "pppcheck.py", line 111, in isTCPSyn
+    import pdb;pdb.set_trace()
+  File "/usr/lib/python2.7/bdb.py", line 53, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/usr/lib/python2.7/bdb.py", line 91, in dispatch_return
+    if self.quitting: raise BdbQuit
+BdbQuit
+
+2016-05-09 09:43:49,681 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:44:05,775 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:44:08,855 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:44:11,956 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:44:16,177 - root       - ERROR Traceback (most recent call last):
+  File "pppcheck.py", line 288, in run_ppp
+    res = doCheck(account, iface)
+  File "pppcheck.py", line 187, in doCheck
+    if status == 0 and http(p, "http://google.com"):
+  File "pppcheck.py", line 118, in http
+    if isTCPSyn(p.recv_packet()):
+  File "pppcheck.py", line 110, in isTCPSyn
+    if pkt[TCP].sport == 80 and pkt[TCP].dport == 31234:
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/packet.py", line 817, in __getitem__
+    raise IndexError("Layer [%s] not found" % lname)
+IndexError: Layer [TCP] not found
+
+2016-05-09 09:44:45,981 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:44:56,106 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:44:59,216 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:45:02,326 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:45:03,458 - root       - ERROR Traceback (most recent call last):
+  File "pppcheck.py", line 300, in run_ppp
+    res = doCheck(account, iface)
+  File "pppcheck.py", line 199, in doCheck
+    if status == 0 and http(p, "http://google.com"):
+  File "pppcheck.py", line 119, in http
+    p.send_packet(IP(src=p.ip(), dst=domain) / TCP(sport=sport, dport=80, flags='S'))
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/base_classes.py", line 196, in __call__
+    i.__init__(*args, **kargs)
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/packet.py", line 89, in __init__
+    self.fields[f] = self.get_field(f).any2i(self,fields[f])
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/fields.py", line 226, in any2i
+    return self.h2i(pkt,x)
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/fields.py", line 207, in h2i
+    x = Net(x)
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/base_classes.py", line 76, in __init__
+    self.parsed,self.netmask = self._parse_net(net)
+  File "/home/pi/py/local/lib/python2.7/site-packages/scapy/base_classes.py", line 70, in _parse_net
+    tmp[0]=socket.gethostbyname(tmp[0])
+gaierror: [Errno -2] Name or service not known
+
+2016-05-09 09:45:28,117 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:45:38,245 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:45:41,336 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:45:44,466 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:45:47,606 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 09:47:05,726 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:47:15,825 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.202
+2016-05-09 09:47:18,926 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:47:28,245 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:47:28,246 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 09:47:29,316 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:47:45,466 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:47:48,575 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:47:57,855 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 09:47:57,857 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 09:48:06,312 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:48:16,445 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:48:19,535 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:48:22,665 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:48:25,796 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 09:50:20,540 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:50:29,928 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:50:33,435 - Hndsl-testload-128 - WARNING Timed out waiting for auth response, resending
+2016-05-09 09:50:45,948 - Hndsl-testload-128 - ERROR PPPoE session error: Cannot Connect
+2016-05-09 09:50:47,106 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:50:57,237 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:51:00,326 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:51:03,456 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:57:56,089 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 09:59:01,355 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 09:59:08,455 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 09:59:11,565 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 09:59:14,666 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 09:59:33,550 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 10:07:19,371 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:07:29,486 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 10:07:32,626 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 10:07:41,935 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 10:07:41,937 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 10:07:43,017 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:07:53,155 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.13
+2016-05-09 10:07:56,245 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 10:07:59,356 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 10:10:03,922 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:10:14,056 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 10:10:17,165 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 10:10:20,266 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 10:10:23,405 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 10:11:05,461 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:11:13,786 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:11:24,906 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 10:11:28,015 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 10:11:31,116 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 10:11:40,449 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-05-09 10:13:42,856 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:13:52,965 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.97
+2016-05-09 10:13:56,066 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 10:14:05,375 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 10:14:05,377 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 10:14:06,456 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:14:22,765 - Hndsl-testload-128 - ERROR Pinging GW failed
+2016-05-09 10:14:22,767 - Hndsl-testload-128 - ERROR Pinging internet failed
+2016-05-09 10:14:22,769 - Hndsl-testload-128 - ERROR DNS failed
+2016-05-09 10:14:22,771 - Hndsl-testload-128 - ERROR HTTP to google.com failed
+2016-05-09 10:48:27,501 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-05-09 10:48:37,625 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.13
+2016-05-09 10:48:40,716 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-05-09 10:48:43,846 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-05-09 10:48:50,156 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-06-07 06:54:14,030 - Hndsl-testload-128 - INFO Checking Hndsl-testload-128 eth0.3001
+2016-06-07 06:54:27,165 - Hndsl-testload-128 - INFO Successful pinging GW 118.70.0.201
+2016-06-07 06:54:30,255 - Hndsl-testload-128 - INFO Successful pinging internet
+2016-06-07 06:54:33,375 - Hndsl-testload-128 - INFO Successful asking DNS
+2016-06-07 06:54:39,656 - Hndsl-testload-128 - INFO Successful visit google.com
+2016-06-07 07:43:34,619 - Hndsl-testload-128 - ERROR Authentication failed, reason:                              
+2016-06-07 07:54:23,045 - Hndsl-testload-128 - WARNING Timed out waiting for PADS
+2016-06-07 07:57:20,734 - Hndsl-testload-128 - ERROR Authentication failed, reason:                              
+2016-10-21 08:06:29,417 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:06:34,498 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:06:39,618 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:06:46,582 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:06:51,652 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:06:56,730 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:07:10,752 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:07:15,822 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:07:37,952 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:07:43,042 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:07:48,132 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:07:55,122 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:08:00,192 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:08:05,282 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:16:20,312 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:16:25,382 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:16:30,462 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:16:37,542 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:21:54,492 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:21:59,560 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:22:04,652 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:22:11,682 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:22:16,752 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:22:21,842 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:23:09,697 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:23:14,757 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:23:19,828 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:23:26,862 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:23:31,932 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:23:37,019 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:25:01,392 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:26:07,842 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:31:14,662 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:31:19,751 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:32:32,162 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:32:37,232 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:32:42,312 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:32:49,322 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:32:54,392 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:32:59,482 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:34:38,402 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:34:43,482 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:34:48,552 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:34:55,582 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:35:00,652 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:35:05,732 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:40:30,662 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:40:35,741 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:40:40,812 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:40:47,812 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-10-21 08:40:52,882 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 07:03:53,082 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 07:03:58,152 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 07:04:03,232 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 07:04:10,242 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 07:04:15,312 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:02:07,007 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:02:12,082 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:02:17,162 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:02:24,207 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:02:29,277 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:02:34,336 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:03:22,977 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:03:28,047 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:03:33,117 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:03:40,162 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:03:45,232 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:03:50,322 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:07:21,457 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:07:26,547 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:07:31,658 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:07:38,591 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:07:43,662 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:07:48,730 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:11:32,789 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:11:37,872 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:11:42,942 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:11:49,992 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:11:55,082 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:12:00,162 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:12:54,347 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:12:59,427 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:13:04,507 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:13:11,517 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:13:16,597 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:13:21,687 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:16:16,162 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:16:21,252 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:16:26,342 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:16:33,352 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:16:38,432 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:16:43,502 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:19:46,372 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:19:51,442 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:19:56,522 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:20:03,582 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:20:08,661 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:20:13,732 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:21:48,832 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:21:53,902 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:21:58,972 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:06,012 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:11,078 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:16,141 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:29,722 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:34,801 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:39,882 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:46,912 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:51,982 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:22:57,062 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:03,992 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:09,062 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:14,142 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:21,182 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:26,247 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:31,312 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:41,132 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:46,212 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:51,292 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:26:58,312 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:27:03,392 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:27:08,482 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:34:38,702 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:34:43,782 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:34:48,862 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:34:55,887 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:35:00,962 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:35:06,031 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:36:58,057 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:37:33,992 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:37:39,062 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:38:21,902 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:38:26,972 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:38:32,052 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:38:39,051 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:38:44,122 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:38:49,217 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:39:43,072 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:39:48,142 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:39:53,217 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:39:57,399 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:00,219 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:02,479 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:05,299 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:07,559 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:10,377 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:14,590 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:19,661 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:40:24,732 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:41:13,832 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:41:18,922 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:41:24,011 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:41:47,952 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:41:53,022 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:41:58,092 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:42:05,132 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:42:10,212 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:42:15,282 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:45:35,138 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:45:40,201 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:45:45,282 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:45:52,312 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:45:57,382 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:46:02,462 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:49:35,332 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:49:40,412 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:49:45,482 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:49:52,508 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:49:57,582 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
+2016-11-01 08:50:02,662 - Hndsl-testload-128 - WARNING Timed out waiting for PADO
