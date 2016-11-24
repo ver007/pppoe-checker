@@ -171,8 +171,8 @@ def doCheck(account, iface):
         pass
     with PPPoESession(username=account['userName'],
                       password=account['password'],
-                      iface=iface,
-                      mac=account['mac'][iface], vlan=account['vlanID']) as p:
+                      iface='vlan' + account['vlanID'],
+                      mac=account['mac'][iface]) as p:
         log.info('Checking %s %s', p.username, p.iface, extra=p.extra_log)
         p.runbg()  # run pppoe in background
         # let pppoe connect for 5s then check
@@ -300,7 +300,8 @@ def run_ppp():
         # reset account status
         account_status[account['userName']] = None
         for iface in IFACE:
-            inf = iface + '.' + str(account['vlanID'])
+            #inf = iface + '.' + str(account['vlanID'])
+            inf = 'vlan' + str(account['vlanID'])
             if inf not in interfaces:
                 try:
                     get_if_raw_hwaddr(inf)
