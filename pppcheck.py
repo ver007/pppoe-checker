@@ -67,6 +67,76 @@ def clearBuff(p):
     while p.recv_queuelen() != 0:
         p.recv_packet()
 
+(py) pi@raspberrypi:~/pppoe-checker$ cat pppcheck.py 
+from multiprocessing import Pool, Manager
+from pppoe import *  # noqa
+from scapy.all import get_if_raw_hwaddr, Ether
+from scapy.contrib import igmp
+from subprocess import call
+import json
+import logging
+import os
+import random
+import requests
+import time
+
+DB_URI = 'http://118.69.190.9/pppoe/{0}'
+PACKET_RETRIES = 3
+
+PPP_TRIES = 3
+PPPOED_TRIES = 15  # time PPPOE wait in seconds
+TIMEOUT = 3
+
+
+def get_env(env):
+    try:
+        return os.environ[env]
+    except KeyError:
+        return None
+
+
+def read_env():
+    global AREA
+    global IFACE
+    if get_env('PPPOE_AREA') is not None and get_env('PPPOE_IFACE') is not None:
+        AREA = get_env('PPPOE_AREA')
+        IFACE = get_env('PPPOE_IFACE')
+        IFACE = IFACE.split()
+    else:
+        AREA = "HN"
+        IFACE = ["eth0"]
+        return
+        raise ValueError("We need to export PPPOE_AREA and PPPOE_IFACE")
+
+
+logging.basicConfig(level=logging.DEBUG)
+log = logging.getLogger("main")
+read_env()
+# r = redis.StrictRedis(host='localhost', port=6379, db=0)
+requests_log = logging.getLogger("requests.packages.urllib3")
+requests_log.setLevel(logging.DEBUG)
+requests_log.propagate = False
+conf.verb = 0
+# conf.sniff_promisc = 0
+manager = Manager()
+account_status = manager.dict()
+
+# STATUS
+# 0 : success
+# 1 : Cannot connect PPPOE - Timed out waiting for PADO
+# 2 : Cannot connect PPPOE - Timed out waiting for auth response
+# 3 : Cannot connect PPPOE - Permission denied
+# 4 : Cannot connect PPPOE - Insufficient resource
+# 5 : Connected but no return IP or GW
+# 6 : Received IP/GW but cannot ping GW
+# 7 : Received IP/GW but cannot ping internet (IP 8.8.8.8)
+# 8 : Cannot send/receive DNS
+
+
+def clearBuff(p):
+    while p.recv_queuelen() != 0:
+        p.recv_packet()
+
 
 def isICMP(pkt, src, dst):
     # print pkt.summary()
