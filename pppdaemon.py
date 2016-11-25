@@ -17,7 +17,7 @@ class App():
     def run(self):
         while True:
             try:
-                p = subprocess.Popen(["sudo `which python`", "/opt/pppoe-checker/pppcheck.py"],
+                p = subprocess.Popen(["python", "/opt/pppoe-checker/pppcheck.py"],
                                      stdout=subprocess.PIPE,
                                      )  # we don't want to change pppoed file right away, so temporary absolute path
                 time_wait = 15*60  # 15mins
