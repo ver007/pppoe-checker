@@ -3,6 +3,8 @@ import socket
 import json
 import cgi
 from Modules.pppinit import *
+import cgitb
+cgitb.enable(display=0, logdir="/var/log")
 
 try:    
     import thread 
@@ -33,12 +35,14 @@ class Polserv(object):
                 break
             else:
                 #conn.sendall("received data %s " % data)
-                try:
+                with cgi.FieldStorage() as fs:
+                    print fs.getfirst("username", "sgdsl-testload-355")
 
-                    form = cgi.FieldStorage(data)
-                    run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
-                            password=form.getfirst("password", "123456"),
-                            vlanID=form.getfirst("vlanID", "100"))
+                try:
+                    #form = cgi.parse_multipart(data,)
+                    #run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
+                    #        password=form.getfirst("password", "123456"),
+                    #        vlanID=form.getfirst("vlanID", "100"))
                     conn.sendall(json.dumps({"Result": "Success"}))
                     conn.close()
                     self.numthreads -= 1
