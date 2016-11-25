@@ -1,6 +1,6 @@
 from multiprocessing import Pool, Manager
 from pppoe import *  # noqa
-from scapy.all import get_if_raw_hwaddr, Ether
+from scapy.all import get_if_raw_hwaddr, get_if_list, Ether
 from scapy.contrib import igmp
 from subprocess import call
 import json
@@ -9,6 +9,7 @@ import os
 import random
 import requests
 import time
+import re
 import sys
 from optparse import *
 
@@ -34,10 +35,14 @@ group1.add_option("-p", "--password", dest="password", type="string",
 
 group1.add_option("-v","--vlan", dest="vlan", type="string",
                   help="request pppoen vlan id", metavar=' ')
+
+group1.add_option("-i","--interface", dest="interface", type="string",
+                  help="request pppoe on ethernet interface ", metavar=' ')
+
 parser.add_option_group(group1)
 (options, args) = parser.parse_args()
 
-for option in ('username', 'password', 'vlan'):
+for option in ('username', 'password', 'vlan', 'interface'):
     if not getattr(options, option):
         print 'Option %s not specified' % option
         parser.print_help()
@@ -58,8 +63,15 @@ def read_env():
         IFACE = get_env('PPPOE_IFACE')
         IFACE = IFACE.split()
     else:
-        AREA = "HN"
-        IFACE = ["eth0"]
+        AREA = "HCM"
+        IFACE = []
+        for ifaces in get_if_list():
+            if re.match(r'P<iface>%s' % options.interface , ifaces, re.IGNORECASE ):
+                IFACE.append(options.interface)
+                break
+            else:
+                continue
+
         return
         raise ValueError("We need to export PPPOE_AREA and PPPOE_IFACE")
 
