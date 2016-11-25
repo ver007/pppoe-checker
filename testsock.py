@@ -33,7 +33,7 @@ class Polserv(object):
             else:
                 try:
                     pf = json.loads(data)
-                    run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
+                    #run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
                     conn.sendall(json.dumps({"Result": "Success"}))
                     conn.close()
                     self.numthreads -= 1
