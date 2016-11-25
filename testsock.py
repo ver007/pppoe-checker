@@ -32,12 +32,12 @@ class Polserv(object):
                 break
             else:
                 try:
-                    with json.loads(data) as pf:
-                        run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
-                        conn.sendall(json.dumps({"Result": "Success"}))
-                        conn.close()
-                        self.numthreads -= 1
-                        break
+                    pf = json.loads(data)
+                    run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
+                    conn.sendall(json.dumps({"Result": "Success"}))
+                    conn.close()
+                    self.numthreads -= 1
+                    break
                 except:
                     conn.sendall("there error in request data")
                     conn.close()
