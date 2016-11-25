@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import socket
 import json
+from BeautifulSoup import BeautifulSoup
 from Modules.pppinit import *
 
 try:    
@@ -31,9 +32,11 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
-                conn.sendall("received data %s " % data)
+                bs = BeautifulSoup(data, 'html.parser')
+                conn.sendall("received data %s " % bs)
                 try:
-                    pf = json.loads(data)
+
+                    #pf = json.loads(data)
                     #run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
                     #conn.sendall(json.dumps({"Result": "Success"}))
                     conn.close()
