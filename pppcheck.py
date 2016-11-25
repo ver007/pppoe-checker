@@ -171,8 +171,9 @@ def doCheck(account, iface):
         pass
     with PPPoESession(username=account['userName'],
                       password=account['password'],
-                      iface='vlan' + account['vlanID'],
-                      mac=account['mac'][iface]) as p:
+                      iface=iface,
+                      mac=account['mac'][iface],
+                      vlan=account['vlanID']) as p:
         log.info('Checking %s %s', p.username, p.iface, extra=p.extra_log)
         p.runbg()  # run pppoe in background
         # let pppoe connect for 5s then check
@@ -308,6 +309,7 @@ def run_ppp():
                     interfaces.append(inf)
                 except IOError:
                     print 'Calling', ["vconfig", "add", iface, str(account['vlanID'])]
+                    call(["vconfig","set_name_type", "DEV_PLUS_VID_NOD_PAD"])
                     call(["vconfig", "add", iface, str(account['vlanID'])])
                     call(["ifconfig", inf, "up"])
                     get_if_raw_hwaddr(inf)
