@@ -1,6 +1,6 @@
 from multiprocessing import Pool, Manager
 from pppoe import *  # noqa
-from scapy.all import get_if_raw_hwaddr, get_if_list, Ether
+from scapy.all import get_if_raw_hwaddr, Ether
 from scapy.contrib import igmp
 from subprocess import call
 import json
@@ -19,6 +19,7 @@ PACKET_RETRIES = 3
 PPP_TRIES = 3
 PPPOED_TRIES = 15  # time PPPOE wait in seconds
 TIMEOUT = 3
+
 
 def get_env(env):
     try:
@@ -277,13 +278,13 @@ def getFailedAccount(accounts):
 
 def run_ppp(**kwargs):
     interfaces = []
-    argument = ("userName","mac","password","vlanID")
-    record ={}
+    argument = ("userName", "mac", "password", "vlanID")
+    record = {}
     record.fromkeys(argument)
-    record['mac']={str(IFACE[0]): get_if_hwaddr(IFACE[0])}
+    record['mac'] = {str(IFACE[0]): get_if_hwaddr(IFACE[0])}
     accounts = []
     # read arguments
-    for name,value in kwargs.items():
+    for name, value in kwargs.items():
             record["name"] = value
     # GET lastest account list
     accounts.append(record)
@@ -382,5 +383,5 @@ def run_ppp(**kwargs):
         log.error(traceback.format_exc(), extra={'user': 'root'})
         return
 
-if __name__ == '__main__':
-    run_ppp(userName="sgdsl-testload-344",password="123456",vlanID="1036")
+#if __name__ == '__main__':
+#    run_ppp(userName="sgdsl-testload-344", password="123456", vlanID="1036")

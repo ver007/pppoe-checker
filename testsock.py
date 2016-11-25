@@ -1,9 +1,13 @@
 #!/usr/bin/env python
 import socket
+import json
+from Modules.pppinit import *
+
 try:    
     import thread 
 except ImportError:
-    import _thread as thread #Py3K changed it.
+    import thread as thread #Py3K changed it.
+
 class Polserv(object):
     def __init__(self):
         self.numthreads = 0
@@ -16,20 +20,25 @@ class Polserv(object):
     def run(self):
         while True:
             thread.start_new_thread(self.handle, self.sock.accept()) 
-    def handle(self,conn,addr):
+    def handle(self, conn, addr):
         self.numthreads += 1
         self.tidcount   += 1
-        tid=self.tidcount
+        tid = self.tidcount
         while True:
-            data=conn.recv(2048)
+            data = conn.recv(2048)
             if not data:
                 conn.close()
-                self.numthreads-=1
+                self.numthreads -= 1
                 break
-            #if "<policy-file-request/>\0" in data:
-            conn.sendall(b"<?xml version='1.0'?><cross-domain-policy><allow-access-from domain='*' to-ports='*'/></cross-domain-policy>")
-            conn.close()
-            self.numthreads-=1
-            break
+            if not "" in data:
+                try:
+                    with json.loads(data) as pf:
+                        run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
+                except:
+                    break
+                conn.sendall(b"<?xml version='1.0'?><cross-domain-policy><allow-access-from domain='*' to-ports='*'/></cross-domain-policy>")
+                conn.close()
+                self.numthreads -= 1
+                break
         #conn.sendall(b"[#%d (%d running)] %s" % (tid,self.numthreads,data) )
 Polserv().run()
