@@ -32,7 +32,7 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
-                bs = BeautifulSoup(data, 'html.parser')
+                bs = BeautifulSoup(data)
                 conn.sendall("received data %s " % bs)
                 try:
 
