@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import socket
 import json
-from BeautifulSoup import BeautifulSoup
+import cgi
 from Modules.pppinit import *
 
 try:    
@@ -32,12 +32,14 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
-                bs = BeautifulSoup(data)
-                conn.sendall("received data %s " % bs)
+                conn.sendall("received data %s " % data)
+                form = cgi.FieldStorage()
                 try:
 
-                    #pf = json.loads(data)
-                    #run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
+
+                    run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
+                            password=form.getfirst("password", "123456"),
+                            vlanID=form.getfirst("vlanID", "100"))
                     #conn.sendall(json.dumps({"Result": "Success"}))
                     conn.close()
                     self.numthreads -= 1
