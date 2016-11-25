@@ -66,12 +66,11 @@ def read_env():
         AREA = "HCM"
         IFACE = []
         for ifaces in get_if_list():
-            if re.match(r'P<iface>%s' % options.interface , ifaces, re.IGNORECASE ):
+            if re.match(r'%s' % options.interface , ifaces, re.IGNORECASE ):
                 IFACE.append(options.interface)
                 break
             else:
                 continue
-
         return
         raise ValueError("We need to export PPPOE_AREA and PPPOE_IFACE")
 
