@@ -35,7 +35,7 @@ class Polserv(object):
                 #conn.sendall("received data %s " % data)
                 try:
 
-                    form = cgi.FieldStorage()
+                    form = cgi.FieldStorage(data)
                     run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
                             password=form.getfirst("password", "123456"),
                             vlanID=form.getfirst("vlanID", "100"))
