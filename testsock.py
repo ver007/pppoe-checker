@@ -3,8 +3,7 @@ import socket
 import json
 import cgi
 from Modules.pppinit import *
-import cgitb
-cgitb.enable(display=0, logdir="/var/log")
+
 
 try:    
     import thread 
@@ -37,7 +36,6 @@ class Polserv(object):
                 #conn.sendall("received data %s " % data)
                 with cgi.FieldStorage() as fs:
                     print fs.getfirst("username", "sgdsl-testload-355")
-
                 try:
                     #form = cgi.parse_multipart(data,)
                     #run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
