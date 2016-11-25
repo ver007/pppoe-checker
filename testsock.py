@@ -32,11 +32,7 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
-                conn.sendall("received data %s " % data)
-                #
-                #print form.getfirst("username", "Sgdsl-testload-355")
-                #print form.getfirst("password", "123456")
-                #print form.getfirst("vlanID", "100")
+                #conn.sendall("received data %s " % data)
                 try:
 
                     form = cgi.FieldStorage()
