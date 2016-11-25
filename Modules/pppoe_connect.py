@@ -314,7 +314,7 @@ def run_ppp():
     # GET lastest account list
     accounts = [{
             'userName': options.username,
-            'mac': {'eth0': '00:16:3e:05:05:05'},
+            'mac': {str(IFACE[0]): get_if_hwaddr(IFACE[0])},
             'password': options.password,
             'vlanID': options.vlan}]
     for account in accounts:
