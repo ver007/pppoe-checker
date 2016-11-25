@@ -9,6 +9,9 @@ import os
 import random
 import requests
 import time
+import sys
+from optparse import *
+
 
 DB_URI = 'http://118.69.190.9/pppoe/{0}'
 PACKET_RETRIES = 3
@@ -17,6 +20,28 @@ PPP_TRIES = 3
 PPPOED_TRIES = 15  # time PPPOE wait in seconds
 TIMEOUT = 3
 
+# Define common parser
+parser = OptionParser()
+# Define Parsing login group1
+group1 = OptionGroup(parser, "PPPoE Common", "argument nescessary for using to request PPPoE")
+# Define group 1 Parsing arguments
+
+group1.add_option("-u", dest="username", type="string",
+                  help="request pppoe username", metavar=' ')
+
+group1.add_option("-p", "--password", dest="password", type="string",
+                  help="request pppoe password", metavar=' ')
+
+group1.add_option("-v","--vlan", dest="vlan", type="string",
+                  help="request pppoen vlan id", metavar=' ')
+parser.add_option_group(group1)
+(options, args) = parser.parse_args()
+
+for option in ('username', 'password', 'vlan'):
+    if not getattr(options, option):
+        print 'Option %s not specified' % option
+        parser.print_help()
+        sys.exit()
 
 def get_env(env):
     try:
@@ -224,9 +249,6 @@ def doCheck(account, iface):
                 else:
                     log.error("HTTP to google.com failed", extra=p.extra_log)
                     status = 9
-
-                check_igmp(p)
-                check_igmp(p)
                 if status == 0:
                     # if PPPOE session is success
                     account_status[account['userName']] = [0, bras_name]
@@ -255,19 +277,6 @@ def getAccount():
             'password': '123456',
             'vlanID': '1038'
         }]
-        r = requests.get(DB_URI.format(AREA), auth=('admin', 'Esdaemon'))
-        if r.status_code == 200:
-            result = r.json()['results']
-            for index, account in enumerate(result):
-                account['mac'] = {}
-                for inf in IFACE:
-                    account['mac'][inf] = '00:16:3e:{0:02d}:{1:02d}:{2:02d}'.format(
-                        index // 100, index % 100, int(inf[-1]))
-            log.debug('Account getting DONE', extra={'user': 'root'})
-            return result
-        else:
-            log.info("Getting account failed", extra={'user': 'root'})
-            return None
     except:
         log.error(traceback.format_exc(), extra={'user': 'root'})
         return None
@@ -292,11 +301,11 @@ def getFailedAccount(accounts):
 def run_ppp():
     interfaces = []
     # GET lastest account list
-    accounts = getAccount()
-    while not accounts:
-        time.sleep(10)
-        accounts = getAccount()
-        continue
+    accounts = [{
+            'userName': options.username,
+            'mac': {'eth0': '00:16:3e:05:05:05'},
+            'password': options.password,
+            'vlanID': options.vlan}]
     for account in accounts:
         # reset account status
         account_status[account['userName']] = None
@@ -364,6 +373,7 @@ def run_ppp():
             result.append({'id': account['id'], 'status': data[0], 'nasName': data[1]})
 
 # log.info("Final status all account: %s" % result, extra={'user': 'root'})
+
         try:
             r = requests.post(
                 DB_URI.format(AREA),
@@ -377,6 +387,7 @@ def run_ppp():
             log.info('Sent account status to DB server Failed with exception',
                      extra={'user': 'root'})
             pass
+
     except KeyboardInterrupt:
         pool.terminate()
         pool.join()
