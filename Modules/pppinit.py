@@ -283,7 +283,7 @@ def run_ppp(**kwargs):
     record['mac']={str(IFACE[0]): get_if_hwaddr(IFACE[0])}
     accounts = []
     # read arguments
-    for name,value in kwargs.item():
+    for name,value in kwargs.items():
             record["name"] = value
     # GET lastest account list
     accounts.append(record)
