@@ -250,10 +250,10 @@ def getAccount():
     try:
         log.debug('Getting account from external server', extra={'user': 'root'})
         return [{
-            'userName': 'Hndsl-testload-128',
+            'userName': 'Sgdsl-testload-344',
             'mac': {'eth0': '00:16:3e:05:05:05'},
             'password': '123456',
-            'vlanID': '754'
+            'vlanID': '1038'
         }]
         r = requests.get(DB_URI.format(AREA), auth=('admin', 'Esdaemon'))
         if r.status_code == 200:

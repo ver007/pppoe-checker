@@ -301,15 +301,15 @@ def run_ppp():
         # reset account status
         account_status[account['userName']] = None
         for iface in IFACE:
-            #inf = iface + '.' + str(account['vlanID'])
-            inf = 'vlan' + str(account['vlanID'])
+            inf = iface + '.' + str(account['vlanID'])
+            #inf = 'vlan' + str(account['vlanID'])
             if inf not in interfaces:
                 try:
                     get_if_raw_hwaddr(inf)
                     interfaces.append(inf)
                 except IOError:
                     print 'Calling', ["vconfig", "add", iface, str(account['vlanID'])]
-                    call(["vconfig","set_name_type", "DEV_PLUS_VID_NOD_PAD"])
+                    call(["vconfig","set_name_type", "DEV_PLUS_VID_NO_PAD"])
                     call(["vconfig", "add", iface, str(account['vlanID'])])
                     call(["ifconfig", inf, "up"])
                     get_if_raw_hwaddr(inf)
