@@ -34,12 +34,15 @@ class Polserv(object):
             else:
                 conn.sendall("received data %s " % data)
                 form = cgi.FieldStorage()
+                print form.getfirst("username", "Sgdsl-testload-355")
+                print form.getfirst("password", "123456")
+                print form.getfirst("vlanID", "100")
                 try:
 
 
-                    run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
-                            password=form.getfirst("password", "123456"),
-                            vlanID=form.getfirst("vlanID", "100"))
+                    #run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
+                    #        password=form.getfirst("password", "123456"),
+                    #        vlanID=form.getfirst("vlanID", "100"))
                     #conn.sendall(json.dumps({"Result": "Success"}))
                     conn.close()
                     self.numthreads -= 1
