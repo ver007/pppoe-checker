@@ -31,6 +31,7 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
+                conn.sendall("received data %s " % data)
                 try:
                     pf = json.loads(data)
                     #run_ppp(userName=pf["username"], password=pf["password"], vlanID=pf["vlanID"])
