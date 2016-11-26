@@ -1,4 +1,4 @@
-from multiprocessing import Pool, Manager
+from multiprocessing import Pool, Manager, log_to_stderr, get_logger
 from pppoe import *  # noqa
 from scapy.all import get_if_raw_hwaddr, Ether
 from scapy.contrib import igmp
@@ -41,7 +41,12 @@ def read_env():
         return
         raise ValueError("We need to export PPPOE_AREA and PPPOE_IFACE")
 
+#init logger for multiprocessing
+log_to_stderr()
+logger = get_logger()
+logger.setLevel(logging.INFO)
 
+# init basic system logger
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger("main")
 read_env()
@@ -246,6 +251,161 @@ def doCheck(account, iface):
     return status
 
 
+class pppoed():
+    # try:
+    #     pid = multiprocessing.current_process()._identity[0]
+    # except IndexError:
+    #     pid = 1
+    # tries = len(IFACE)
+    def __init__(self,account,iface):
+        self.account = account
+        self.iface = iface
+        self.status = 0
+        self.my_parent = os.getppid()
+        self.bras_name = None
+        self.pppoed_session = None
+        self.interfaces = None
+
+    def setInterface(self):
+        account_status[self.account['userName']] = None
+        inf = self.iface + '.' + str(self.account['vlanID'])
+        #inf = 'vlan' + str(account['vlanID'])
+        if inf != self.interfaces:
+            try:
+                get_if_raw_hwaddr(inf)
+                self.interfaces = inf
+            except IOError:
+                print 'Calling', ["vconfig", "add", iface, str(self.account['vlanID'])]
+                call(["vconfig", "set_name_type", "DEV_PLUS_VID_NO_PAD"])
+                call(["vconfig", "add", iface, str(self.account['vlanID'])])
+                call(["ifconfig", inf, "up"])
+                get_if_raw_hwaddr(inf)
+                self.interfaces = inf
+
+
+    def setPPPoED(self):
+        try:
+            if account_status[self.account['userName']][0] == 0:
+                return 0
+        except:
+            pass
+        with PPPoESession(username=self.account['userName'],
+                          password=self.account['password'],
+                          iface=self.iface,
+                          mac=self.account['mac'][iface],
+                          vlan=self.account['vlanID']) as p:
+            log.info('Checking %s %s', p.username, p.iface, extra=p.extra_log)
+            p.runbg()  # run pppoe in background
+            # let pppoe connect for 5s then check
+            pppoe_tried = PPPOED_TRIES
+            while (not p.connected) and pppoe_tried > 0:
+                try:
+                    if self.my_parent != os.getppid():
+                        log.info('Parent died, suiciding', extra=p.extra_log)
+                        sys.exit(0)
+                except:
+                    pass
+                time.sleep(1)
+                pppoe_tried -= 1
+            time.sleep(1)
+            if p.bras_name:
+                bras_name = p.bras_name
+            if not p.connected:
+                log.error('PPPoE session error: Cannot Connect', extra=p.extra_log)
+                status = p.error_id
+                p.terminate()
+            else:
+                # check connection status
+                try:
+                    p.ip()
+                    p.gw()
+                    time.sleep(1)
+                    if ping(p, p.ip(), p.gw()):
+                        log.info('Successful pinging GW %s', p.gw(), extra=p.extra_log)
+                    else:
+                        log.error('Pinging GW failed', extra=p.extra_log)
+                        self.status = 6
+                    if self.status == 0:
+                        # if PPPOE session is success
+                        account_status[self.account['userName']] = [0, bras_name]
+                        p.stop()
+                except TypeError:
+                    log.exception('PPPoE session error', extra=p.extra_log)
+                    self.status = 5
+                self.pppoed_session = p
+
+    def keepAlive(self):
+        if self.pppoed_session:
+            if ping(self.pppoed_session, self.pppoed_session.ip(), self.pppoed_session.gw()):
+                log.info('Successful pinging GW %s', self.pppoed_session.gw(), extra=self.pppoed_session.extra_log)
+                self.status = 0
+            else:
+                log.error('Pinging GW failed', extra=self.pppoed_session.extra_log)
+                self.status = 6
+                self.stopPPPoED()
+        else:
+                self.setPPPoED()
+
+    def stopPPPoED(self):
+            self.pppoed_session.stop()
+            self.pppoed_session = None
+
+    def runCommand(self, command="ls", argument={}):
+        print "program %ls with args %s" % (command, argument)
+        return
+
+    def runTestPPPoE(self, **kwargs):
+        interfaces = []
+        argument = ("userName", "mac", "password", "vlanID")
+        record = {}
+        record.fromkeys(argument)
+        record['mac'] = {str(IFACE[0]): get_if_hwaddr(IFACE[0])}
+        accounts = []
+        # read arguments
+        for name, value in kwargs.items():
+                record[name] = value
+        # GET lastest account list
+        accounts.append(record)
+        #accounts = [{
+        #        'userName': "",
+        #        'mac': {str(IFACE[0]): get_if_hwaddr(IFACE[0])},
+        #        'password': "",
+        #        'vlanID': ""}]
+        for account in accounts:
+            # reset account status
+            account_status[account['userName']] = None
+            for iface in IFACE:
+                inf = iface + '.' + str(account['vlanID'])
+                #inf = 'vlan' + str(account['vlanID'])
+                if inf not in interfaces:
+                    try:
+                        get_if_raw_hwaddr(inf)
+                        interfaces.append(inf)
+                    except IOError:
+                        print 'Calling', ["vconfig", "add", iface, str(account['vlanID'])]
+                        call(["vconfig", "set_name_type", "DEV_PLUS_VID_NO_PAD"])
+                        call(["vconfig", "add", iface, str(account['vlanID'])])
+                        call(["ifconfig", inf, "up"])
+                        get_if_raw_hwaddr(inf)
+                        interfaces.append(inf)
+        try:
+            # pool = Pool(8)
+            doCheck(accounts[0], IFACE[0])
+            time.sleep(0.1)
+            #if res != 0:
+            #    doCheck(account, iface)
+            #pool.apply_async(doCheck, (account, iface, ))
+            return
+            pool.close()
+            pool.join()
+        except KeyboardInterrupt:
+            pool.terminate()
+            pool.join()
+            return
+        except:
+            log.error(traceback.format_exc(), extra={'user': 'root'})
+            return
+
 def getAccount():
     try:
         log.debug('Getting account from external server', extra={'user': 'root'})
@@ -382,6 +542,8 @@ def run_ppp(**kwargs):
     except:
         log.error(traceback.format_exc(), extra={'user': 'root'})
         return
+
+
 
 #if __name__ == '__main__':
 #    run_ppp(userName="sgdsl-testload-344", password="123456", vlanID="1036")

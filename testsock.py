@@ -23,13 +23,29 @@ class Polserv(object):
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.sock.bind(('0.0.0.0', self.port))
         self.sock.listen(5)
+        self.inituser = "Sgdsl-testload-344"
+        self.initpass = "123456"
+        self.initvlanid = "1000"
+
     def run(self):
+        pppSession = pppoed(account=[{"userName": self.inituser,
+                                      "password": self.initpass,
+                                      "vlanID": self.initvlanid}])
+        while pppSession.interfaces is None:
+            pppSession.setInterface()
+            time.sleep(0.5)
+        while pppSession.pppoed_session is None:
+            pppSession.setPPPoED()
+            time.sleep(10)
         while True:
-            thread.start_new_thread(self.handle, self.sock.accept()) 
+            thread.start_new_thread(self.handle, self.sock.accept())
+            pppSession.keepAlive()
+
     def handle(self, conn, addr):
         self.numthreads += 1
         self.tidcount   += 1
         tid = self.tidcount
+
         while True:
             data = conn.recv(2048)
             if not data:
