@@ -29,10 +29,10 @@ class Polserv(object):
         self.initvlanid = "1000"
 
     def run(self):
-        pppSession = pppoed(account=[{"userName": self.inituser,
+        pppSession = pppoed(account={"userName": self.inituser,
                                       "password": self.initpass,
                                       "mac": self.initmac,
-                                      "vlanID": self.initvlanid}],
+                                      "vlanID": self.initvlanid},
                             iface="eth0")
         while pppSession.interfaces is None:
             pppSession.setInterface()
