@@ -25,12 +25,15 @@ class Polserv(object):
         self.sock.listen(5)
         self.inituser = "Sgdsl-testload-344"
         self.initpass = "123456"
+        self.initmac = "ca:64:16:40:11:26"
         self.initvlanid = "1000"
 
     def run(self):
         pppSession = pppoed(account=[{"userName": self.inituser,
                                       "password": self.initpass,
-                                      "vlanID": self.initvlanid}])
+                                      "mac": self.initmac,
+                                      "vlanID": self.initvlanid}],
+                            iface="eth0")
         while pppSession.interfaces is None:
             pppSession.setInterface()
             time.sleep(0.5)
