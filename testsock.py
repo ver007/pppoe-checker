@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import socket
 import json
-import cgi
-from BeautifulSoup import BeautifulSoup
-from selenium import webdriver
+#import cgi
+#from BeautifulSoup import BeautifulSoup
+#from selenium import webdriver
 import json
 import re
 from Modules.pppinit import *
