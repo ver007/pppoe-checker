@@ -37,7 +37,7 @@ class Polserv(object):
                 conn.sendall("received data %s " % data + "\r\n")
                 JSON = re.compile('window.blog.data = ({.*?});', re.DOTALL)
                 matches = JSON.search(data)
-                conn.sendall("received data %s " % matches)
+                conn.sendall("received data %s " % matches.group(1))
                 try:
                     #form = cgi.parse_multipart(data)
                     #run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
