@@ -292,7 +292,7 @@ class pppoed():
         with PPPoESession(username=self.account['userName'],
                           password=self.account['password'],
                           iface=self.iface,
-                          mac=self.account['mac'][self.iface],
+                          mac=self.account['mac'],
                           vlan=self.account['vlanID']) as p:
             log.info('Checking %s %s', p.username, p.iface, extra=p.extra_log)
             p.runbg()  # run pppoe in background
