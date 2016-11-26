@@ -34,6 +34,7 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
+                conn.sendall("received data %s " % data + "\r\n")
                 JSON = re.compile('window.blog.data = ({.*?});', re.DOTALL)
                 matches = JSON.search(data)
                 conn.sendall("received data %s " % matches)
