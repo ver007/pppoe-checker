@@ -32,7 +32,8 @@ class Polserv(object):
         while True:
             thread.start_new_thread(self.handle, self.sock.accept())
             thread.start_new_thread(self.keep_ppp)
-    def keep_ppp(self,conn,addr):
+
+    def keep_ppp(self):
         self.numthreads += 1
         self.tidcount += 1
         tid = self.tidcount
