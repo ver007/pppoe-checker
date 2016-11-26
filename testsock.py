@@ -30,8 +30,9 @@ class Polserv(object):
 
     def run(self):
         while True:
-            thread.start_new_thread(self.handle, self.sock.accept())
             thread.start_new_thread(self.keep_ppp)
+            thread.start_new_thread(self.handle, self.sock.accept())
+
 
     def keep_ppp(self):
         self.numthreads += 1
