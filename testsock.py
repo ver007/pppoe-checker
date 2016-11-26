@@ -47,6 +47,7 @@ class Polserv(object):
         pppSession.setInterface()
         time.sleep(0.5)
         pppSession.setPPPoED()
+        time.sleep(15)
         while True:
             pppSession.keepAlive()
 
