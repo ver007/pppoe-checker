@@ -38,7 +38,7 @@ class Polserv(object):
                 break
             else:
                 conn.sendall("received data %s " % data + "\r\n")
-                JSON = re.compile('({.*?})', re.DOALL)
+                JSON = re.compile('({.*?})', re.DOTALL)
                 matches = JSON.search(data)
                 conn.sendall("received json data %s" % matches.group(1) + "\r\n")
                 try:
