@@ -26,7 +26,7 @@ class Polserv(object):
         self.inituser = "Sgdsl-testload-344"
         self.initpass = "123456"
         self.initmac = "ca:64:16:40:11:26"
-        self.initvlanid = "1000"
+        self.initvlanid = "1036"
 
     def run(self):
         pppSession = pppoed(account={"userName": self.inituser,
