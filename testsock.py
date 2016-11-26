@@ -42,10 +42,11 @@ class Polserv(object):
                                   "mac": self.initmac,
                                   "vlanID": self.initvlanid},
                         iface="eth0")
-            while pppSession.interfaces is None:
-                pppSession.setInterface()
-                time.sleep(0.5)
-                pppSession.setPPPoED()
+
+            pppSession.setInterface()
+            time.sleep(0.5)
+            pppSession.setPPPoED()
+            pppSession.keepAlive()
 
     def handle(self, conn, addr):
         self.numthreads += 1
