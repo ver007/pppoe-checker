@@ -29,7 +29,6 @@ class App():
             except:
                 continue
 
-
 if __name__ == '__main__':
     app = App()
     daemon_runner = runner.DaemonRunner(app)
