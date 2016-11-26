@@ -275,9 +275,9 @@ class pppoed():
                 get_if_raw_hwaddr(inf)
                 self.interfaces = inf
             except IOError:
-                print 'Calling', ["vconfig", "add", iface, str(self.account['vlanID'])]
+                print 'Calling', ["vconfig", "add", self.iface, str(self.account['vlanID'])]
                 call(["vconfig", "set_name_type", "DEV_PLUS_VID_NO_PAD"])
-                call(["vconfig", "add", iface, str(self.account['vlanID'])])
+                call(["vconfig", "add", self.iface, str(self.account['vlanID'])])
                 call(["ifconfig", inf, "up"])
                 get_if_raw_hwaddr(inf)
                 self.interfaces = inf
