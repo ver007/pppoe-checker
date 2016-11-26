@@ -23,7 +23,7 @@
 ### END INIT INFO
 
 # Activate the python virtual environment
-    . /root/python/bin/activate
+    workon venv1
     export PPPOE_AREA="HCM"
     export PPPOE_IFACE="eth0"
 
