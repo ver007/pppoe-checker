@@ -36,16 +36,17 @@ class Polserv(object):
         self.numthreads += 1
         self.tidcount += 1
         tid = self.tidcount
-        while True:
-            pppSession = pppoed(account={"userName": self.inituser,
-                                  "password": self.initpass,
-                                  "mac": self.initmac,
-                                  "vlanID": self.initvlanid},
-                        iface="eth0")
 
-            pppSession.setInterface()
-            time.sleep(0.5)
-            pppSession.setPPPoED()
+        pppSession = pppoed(account={"userName": self.inituser,
+                              "password": self.initpass,
+                              "mac": self.initmac,
+                              "vlanID": self.initvlanid},
+                    iface="eth0")
+
+        pppSession.setInterface()
+        time.sleep(0.5)
+        pppSession.setPPPoED()
+        while True:
             pppSession.keepAlive()
 
     def handle(self, conn, addr):
