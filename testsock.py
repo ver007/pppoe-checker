@@ -2,6 +2,7 @@
 import socket
 import json
 import cgi
+from BeautifulSoup import BeautifulSoup
 from Modules.pppinit import *
 
 
@@ -33,9 +34,9 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
-                #conn.sendall("received data %s " % data)
-                with cgi.FieldStorage() as fs:
-                    print fs.getfirst("username", "sgdsl-testload-355")
+                JSON = re.compile('window.blog.data = ({.*?});', re.DOTALL)
+                matches = JSON.search(data)
+                conn.sendall("received data %s " % matches)
                 try:
                     #form = cgi.parse_multipart(data)
                     #run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
