@@ -37,15 +37,20 @@ class Polserv(object):
                 self.numthreads -= 1
                 break
             else:
-                conn.sendall("received data %s " % data + "\r\n")
-                JSON = re.compile('({.*?})', re.DOTALL)
-                matches = JSON.search(data)
-                conn.sendall("received json data %s" % matches.group(1) + "\r\n")
+                #conn.sendall("received data %s " % data + "\r\n")
+                #conn.sendall("received json data %s" % matches.group(1) + "\r\n")
                 try:
+                    # get data as form-field request
                     #form = cgi.parse_multipart(data)
                     #run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
                     #        password=form.getfirst("password", "123456"),
                     #        vlanID=form.getfirst("vlanID", "100"))
+                    #get data as json data request
+                    JSON = re.compile('({.*?})', re.DOTALL)
+                    matches = json.loads(JSON.search(data).group(1))
+                    run_ppp(userName=matches["userName"],
+                            password=matches["password"],
+                            vlanID=matches["vlanID"])
                     conn.sendall(json.dumps({"Result": "Success"}))
                     conn.close()
                     self.numthreads -= 1
