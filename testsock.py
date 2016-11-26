@@ -3,6 +3,9 @@ import socket
 import json
 import cgi
 from BeautifulSoup import BeautifulSoup
+from selenium import webdriver
+import json
+import re
 from Modules.pppinit import *
 
 
@@ -35,9 +38,9 @@ class Polserv(object):
                 break
             else:
                 conn.sendall("received data %s " % data + "\r\n")
-                JSON = re.compile('window.blog.data = ({.*?});', re.DOTALL)
+                JSON = re.compile('({.*?})', re.DOALL)
                 matches = JSON.search(data)
-                conn.sendall("received data %s " % matches.group(1))
+                conn.sendall("received json data %s" % matches.group(1) + "\r\n")
                 try:
                     #form = cgi.parse_multipart(data)
                     #run_ppp(userName=form.getfirst("username", "Sgdsl-testload-355"),
