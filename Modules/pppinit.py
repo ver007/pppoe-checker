@@ -328,11 +328,10 @@ class pppoed():
                     if self.status == 0:
                         # if PPPOE session is success
                         account_status[self.account['userName']] = [0, bras_name]
-                        p.stop()
+                        self.pppoed_session = p
                 except TypeError:
                     log.exception('PPPoE session error', extra=p.extra_log)
                     self.status = 5
-                self.pppoed_session = p
 
     def keepAlive(self):
         if self.pppoed_session:
