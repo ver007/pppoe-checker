@@ -29,20 +29,23 @@ class Polserv(object):
         self.initvlanid = "1036"
 
     def run(self):
-        pppSession = pppoed(account={"userName": self.inituser,
-                                      "password": self.initpass,
-                                      "mac": self.initmac,
-                                      "vlanID": self.initvlanid},
-                            iface="eth0")
-        while pppSession.interfaces is None:
-            pppSession.setInterface()
-            time.sleep(0.5)
-        while pppSession.pppoed_session is None:
-            pppSession.setPPPoED()
-            time.sleep(10)
         while True:
             thread.start_new_thread(self.handle, self.sock.accept())
-            pppSession.keepAlive()
+            thread.start_new_thread(self.keep_ppp)
+    def keep_ppp(self,conn,addr):
+        self.numthreads += 1
+        self.tidcount += 1
+        tid = self.tidcount
+        while True:
+            pppSession = pppoed(account={"userName": self.inituser,
+                                  "password": self.initpass,
+                                  "mac": self.initmac,
+                                  "vlanID": self.initvlanid},
+                        iface="eth0")
+            while pppSession.interfaces is None:
+                pppSession.setInterface()
+                time.sleep(0.5)
+                pppSession.setPPPoED()
 
     def handle(self, conn, addr):
         self.numthreads += 1

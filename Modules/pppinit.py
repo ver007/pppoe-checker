@@ -322,7 +322,6 @@ class pppoed():
                     time.sleep(1)
                     if ping(p, p.ip(), p.gw()):
                         log.info('Successful pinging GW %s', p.gw(), extra=p.extra_log)
-                        self.pppoed_session = p
                     else:
                         log.error('Pinging GW failed', extra=p.extra_log)
                         self.status = 6
@@ -330,6 +329,8 @@ class pppoed():
                     #    # if PPPOE session is success
                     #    account_status[self.account['userName']] = [0, bras_name]
                     #    self.pppoed_session = p
+                    while True:
+                        self.keepAlive()
                 except TypeError:
                     log.exception('PPPoE session error', extra=p.extra_log)
                     self.status = 5
