@@ -27,18 +27,16 @@ class Polserv(object):
         self.initpass = "123456"
         self.initmac = "ca:64:16:40:11:26"
         self.initvlanid = "1036"
-
-        pppSession = pppoed(account={"userName": self.inituser,
+        self.pppSession = pppoed(account={"userName": self.inituser,
                               "password": self.initpass,
                               "mac": self.initmac,
                               "vlanID": self.initvlanid},
                     iface="eth0")
 
-        pppSession.setInterface()
+        self.pppSession.setInterface()
         time.sleep(0.5)
-        pppSession.setPPPoED()
+        self.pppSession.setPPPoED()
         time.sleep(5)
-
 
     def run(self):
         while True:
