@@ -5,6 +5,11 @@ import socket
 #from selenium import webdriver
 import json
 import re
+from scapy.all import get_if_raw_hwaddr, Ether
+from scapy.contrib import igmp
+from subprocess import call
+import logging
+import os
 from Modules.pppinit import *
 
 
@@ -27,15 +32,16 @@ class Polserv(object):
         self.initmac = "ca:64:16:40:11:26"
         self.initvlanid = "1036"
         self.pppSession = pppoed(account={"userName": self.inituser,
-                              "password": self.initpass,
-                              "mac": self.initmac,
-                              "vlanID": self.initvlanid},
-                    iface="eth0")
+                                "password": self.initpass,
+                                "mac": self.initmac,
+                                "vlanID": self.initvlanid},
+                                iface="eth0")
 
         self.pppSession.setInterface()
         time.sleep(0.5)
-        self.pppSession.setPPPoED()
-        time.sleep(5)
+        while not self.pppSession.pppoed_session:
+            self.pppSession.setPPPoED()
+            time.sleep(5)
 
     def run(self):
         while True:
@@ -64,13 +70,26 @@ class Polserv(object):
                     #get data as json data request
                     JSON = re.compile('({.*?})', re.DOTALL)
                     matches = json.loads(JSON.search(data).group(1))
-                    run_ppp(userName=matches["userName"],
-                            password=matches["password"],
-                            vlanID=matches["vlanID"])
-                    conn.sendall(json.dumps({"Result": "Success"}))
-                    conn.close()
-                    self.numthreads -= 1
-                    break
+                    #json data for test
+                    # PPPoE :{"command": "testPPPoE", "userName": "...", "password": "...", "vlanID": "..."}
+                    if matches["command"] == "testPPPoE":
+                        run_ppp(userName=matches["userName"],
+                                password=matches["password"],
+                                vlanID=matches["vlanID"])
+                        conn.sendall(json.dumps({"Result": "Success"}))
+                        conn.close()
+                        self.numthreads -= 1
+                        break
+                    # run syscall command:{"command": "shell", "shellcommand": "..." , "args": ["args1", "args2", "args3"]}
+                    elif matches["command"] == "shell":
+                        carg = [matches["shellcommand"]]
+                        for arg in matches["args"]:
+                            carg.append(arg)
+                        conn.sendall("Run shell command: %s " % matches)
+                        call(carg)
+                        conn.close()
+                        self.numthreads -=1
+                        break
                 except:
                     conn.sendall("there error in request data")
                     conn.close()

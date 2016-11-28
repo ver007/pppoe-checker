@@ -4,6 +4,8 @@ import time
 from logger import getHandler
 from daemon import runner
 import subprocess
+import daemon
+
 
 class App():
     def __init__(self):
@@ -34,3 +36,4 @@ if __name__ == '__main__':
     daemon_runner = runner.DaemonRunner(app)
     daemon_runner.daemon_context.files_preserve = [getHandler().stream]
     daemon_runner.do_action()
+
