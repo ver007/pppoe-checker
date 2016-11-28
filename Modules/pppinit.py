@@ -289,49 +289,49 @@ class pppoed():
                 return 0
         except:
             pass
-        with PPPoESession(username=self.account['userName'],
+        p = PPPoESession(username=self.account['userName'],
                           password=self.account['password'],
                           iface=self.iface,
                           mac=self.account['mac'],
-                          vlan=self.account['vlanID']) as p:
-            log.info('Checking %s %s', p.username, p.iface, extra=p.extra_log)
-            p.runbg()  # run pppoe in background
+                          vlan=self.account['vlanID'])
+        log.info('Checking %s %s', p.username, p.iface, extra=p.extra_log)
+        p.runbg()  # run pppoe in background
             # let pppoe connect for 5s then check
-            pppoe_tried = PPPOED_TRIES
-            while (not p.connected) and pppoe_tried > 0:
-                try:
-                    if self.my_parent != os.getppid():
-                        log.info('Parent died, suiciding', extra=p.extra_log)
-                        sys.exit(0)
-                except:
-                    pass
-                time.sleep(1)
-                pppoe_tried -= 1
+        pppoe_tried = PPPOED_TRIES
+        while (not p.connected) and pppoe_tried > 0:
+            try:
+                if self.my_parent != os.getppid():
+                    log.info('Parent died, suiciding', extra=p.extra_log)
+                    sys.exit(0)
+            except:
+                pass
             time.sleep(1)
-            if p.bras_name:
-                bras_name = p.bras_name
-            if not p.connected:
-                log.error('PPPoE session error: Cannot Connect', extra=p.extra_log)
-                status = p.error_id
-                p.terminate()
-            else:
-                # check connection status
-                try:
-                    p.ip()
-                    p.gw()
-                    time.sleep(1)
-                    if ping(p, p.ip(), p.gw()):
-                        log.info('Successful pinging GW %s', p.gw(), extra=p.extra_log)
-                    else:
-                        log.error('Pinging GW failed', extra=p.extra_log)
-                        self.status = 6
-                    #if self.status == 0:
-                    #    # if PPPOE session is success
-                    #    account_status[self.account['userName']] = [0, bras_name]
-                    #    self.pppoed_session = p
-                except TypeError:
-                    log.exception('PPPoE session error', extra=p.extra_log)
-                    self.status = 5
+            pppoe_tried -= 1
+        time.sleep(1)
+        if p.bras_name:
+            bras_name = p.bras_name
+        if not p.connected:
+            log.error('PPPoE session error: Cannot Connect', extra=p.extra_log)
+            status = p.error_id
+            p.terminate()
+        else:
+            # check connection status
+            try:
+                p.ip()
+                p.gw()
+                time.sleep(1)
+                if ping(p, p.ip(), p.gw()):
+                    log.info('Successful pinging GW %s', p.gw(), extra=p.extra_log)
+                else:
+                    log.error('Pinging GW failed', extra=p.extra_log)
+                    self.status = 6
+                if self.status == 0:
+                    # if PPPOE session is success
+                    account_status[self.account['userName']] = [0, bras_name]
+                    self.pppoed_session = p
+            except TypeError:
+                log.exception('PPPoE session error', extra=p.extra_log)
+                self.status = 5
 
     def keepAlive(self):
         if self.pppoed_session:
