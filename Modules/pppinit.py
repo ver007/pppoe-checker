@@ -342,9 +342,9 @@ class pppoed():
                 log.error('Pinging GW failed', extra=self.pppoed_session.extra_log)
                 self.status = 6
                 self.stopPPPoED()
-        else:
-                self.setPPPoED()
+                return False
         time.sleep(3)
+        return True
 
     def stopPPPoED(self):
             self.pppoed_session.stop()
