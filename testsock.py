@@ -7,7 +7,7 @@ import json
 import re
 from scapy.all import get_if_raw_hwaddr, Ether
 from scapy.contrib import igmp
-from subprocess import call
+import subprocess as sp
 import logging
 import os
 from Modules.pppinit import *
@@ -90,8 +90,13 @@ class Polserv(object):
                         carg = [matches["shellcommand"]]
                         for arg in matches["args"]:
                             carg.append(arg)
-                        conn.sendall("Run shell command: %s " % matches)
-                        call(carg)
+                        try:
+                            conn.sendall("Run shell command: %s " % matches)
+                            ps = sp.call(carg,stdout=sp.subprocess.PIPE)
+                            stdout_value = ps.communicate()[0]
+                            conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
+                        except:
+                            conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
                         conn.close()
                         self.numthreads -=1
                         break
