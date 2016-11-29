@@ -105,7 +105,7 @@ class Polserv(object):
                     elif matches["command"] == "dropPPPoE":
                         with self.pppSession:
                             try:
-                                out_value = {"PPPoESession": self.pppSession.pppoed_session.ip, "status" : "Down"}
+                                out_value = {"PPPoESession": str(self.pppSession.pppoed_session.sess_id), "status" : "Down"}
                                 self.pppSession.stopPPPoED()
                                 conn.sendall(json.dumps(out_value))
                             except:
