@@ -102,7 +102,7 @@ class Polserv(object):
                         try:
                             cline = shlex.split(matches["commandline"])
                             src_ip = self.pppSession.pppoed_session.ip()
-                            if bool(matches["formPPPoE"]):
+                            if int(matches["formPPPoE"]):
                                 cline.append(src_ip)
                             else:
                                 pass
