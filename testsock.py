@@ -92,11 +92,22 @@ class Polserv(object):
                             carg.append(arg)
                         try:
                             conn.sendall("Run shell command: %s " % matches)
-                            ps = sp.call(carg,stdout=sp.subprocess.PIPE)
+                            ps = sp.Popen(carg,stdout=sp.PIPE)
                             stdout_value = ps.communicate()[0]
                             conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
+                            ps.kill()
                         except:
                             conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
+                        conn.close()
+                        self.numthreads -=1
+                    # drop current background inited PPPoE Session
+                    elif matches["command"] == "dropPPPoE":
+                        try:
+                            out_value = {"PPPoESession": self.pppSession.pppoed_session.ip, "status" : "Down"}
+                            self.pppSession.stopPPPoED()
+                            conn.sendall(json.dumps(out_value))
+                        except:
+                            conn.sendall(json.dumps({"Result": "Success", "value": "error in request body"}))
                         conn.close()
                         self.numthreads -=1
                         break
