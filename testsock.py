@@ -99,8 +99,10 @@ class Polserv(object):
                         self.numthreads -= 1
                     # run syscall command:{"command": "shellcmd", "commandline": "full command line text"}
                     elif matches["command"] == "shellcmd":
+                        cline = shlex.split(matches["commandline"])
                         src_ip = self.pppSession.pppoed_session.ip()
-                        conn.sendall(json.dumps({"src ip": src_ip}))
+                        cline.append(src_ip)
+                        conn.sendall(json.dumps({"result:": repr(cline)}))
                         try:
                             cline = shlex.split(matches["commandline"])
                             src_ip = self.pppSession.pppoed_session.ip()
