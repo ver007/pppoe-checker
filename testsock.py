@@ -39,7 +39,7 @@ class Polserv(object):
 
         self.pppSession.setInterface()
         time.sleep(0.5)
-        while not self.pppSession.pppoed_session:
+        while not self.pppSession.pppoed_session: # ensure for background PPPoE session online
             self.pppSession.setPPPoED()
             time.sleep(5)
 
@@ -53,12 +53,7 @@ class Polserv(object):
         tid = self.tidcount
 
         while True:
-            if self.pppSession.pppoed_session is not None:
-                self.pppSession.keepAlive()
-            else:
-                pass
-            time.sleep(1)
-            data = conn.recv(2048)
+            data = conn.recv(4096)
             if not data:
                 conn.close()
                 self.numthreads -= 1
@@ -110,7 +105,7 @@ class Polserv(object):
                             except:
                                 conn.sendall(json.dumps({"Result": "Success", "value": "error in request body"}))
                         conn.close()
-                        self.numthreads -=1
+                        self.numthreads -= 1
                         break
                 except:
                     conn.sendall("there error in request data")
