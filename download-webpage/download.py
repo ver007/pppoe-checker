@@ -19,7 +19,7 @@ def runCommand(command):
     #    return "Error stdout output: ", e.output
 
 
-def download(url, directory,src_ip) :
+def download(url, directory, src_ip) :
     print "fileurl: " + url + '|'
     sys.stdout.flush()
     command = 'curl -H "X-Forwarded-For: '+src_ip+'" -w "@' + os.path.join(directory, 'format.txt') + '" -o ' + os.path.join(directory, 'download.tmp') + ' -s ' + url
@@ -34,7 +34,7 @@ def main():
     url =  str(sys.argv[1])
     included =  str(sys.argv[2])
     form_ip = str(sys.argv[3])
-    download(url, directory)
+    download(url, directory,form_ip)
 
     if (included == 'true'):
         readFile = open(os.path.join(directory, 'download.tmp'))
