@@ -97,16 +97,15 @@ class Polserv(object):
                             conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
                         conn.close()
                         self.numthreads -= 1
-                    # run syscall command:{"command": "shellcmd", "commandline": "full command line text"}
+                    # run syscall command:{"command": "shellcmd","formPPPoE": True, "commandline": "full command line text"}
                     elif matches["command"] == "shellcmd":
-                        cline = shlex.split(matches["commandline"])
-                        src_ip = self.pppSession.pppoed_session.ip()
-                        cline.append(src_ip)
-                        conn.sendall(json.dumps({"result:": repr(cline)}))
                         try:
                             cline = shlex.split(matches["commandline"])
                             src_ip = self.pppSession.pppoed_session.ip()
-                            cline.append(src_ip)
+                            if matches["formPPPoE"] is True:
+                                cline.append(src_ip)
+                            else:
+                                pass
                             ps = sp.Popen(cline, stdout=sp.PIPE)
                             stdout_value = ps.communicate()[0]
                             conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
