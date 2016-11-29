@@ -46,12 +46,6 @@ class Polserv(object):
     def run(self):
         while True:
             thread.start_new_thread(self.handle, self.sock.accept())
-            if self.pppSession.pppoed_session is not None:
-                self.pppSession.keepAlive()
-                continue
-            else:
-                continue
-
 
     def handle(self, conn, addr):
         self.numthreads += 1
@@ -59,6 +53,11 @@ class Polserv(object):
         tid = self.tidcount
 
         while True:
+            if self.pppSession.pppoed_session is not None:
+                self.pppSession.keepAlive()
+            else:
+                pass
+            time.sleep(1)
             data = conn.recv(2048)
             if not data:
                 conn.close()
