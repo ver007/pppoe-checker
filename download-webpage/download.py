@@ -33,7 +33,7 @@ def main():
     #print "Download complete to " + directory
     url =  str(sys.argv[1])
     included =  str(sys.argv[2])
-    src_ip = str(sys.argv[3])
+    src_ip = print(str(sys.argv[2]))
     download(url, directory)
 
     if (included == 'true'):
@@ -48,7 +48,7 @@ def main():
                 pass
             else:
                 fileList.append(newUrl)
-                download(newUrl, directory, src_ip=src_ip)
+                download(newUrl, directory, src_ip="127.0.0.1")
                 sys.stdout.flush()
 
 
