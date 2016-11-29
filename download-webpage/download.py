@@ -33,7 +33,7 @@ def main():
     #print "Download complete to " + directory
     url =  str(sys.argv[1])
     included =  str(sys.argv[2])
-    src_ip = print(str(sys.argv[2]))
+    print (str(sys.argv[2]))
     download(url, directory)
 
     if (included == 'true'):
