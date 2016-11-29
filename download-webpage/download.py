@@ -2,14 +2,17 @@ import requests
 import sys
 import time
 import os
-import subprocess
 import re
+import shlex
+import subprocess
+#from subprocess import Popen, PIPE, STDOUT
 
 def runCommand(command):
-    p = subprocess.Popen(command,
+    p = subprocess.Popen(shlex.split(command),
                          stdout=subprocess.PIPE,
                          stderr=subprocess.STDOUT)
     return iter(p.stdout.readline, b'')
+    #return Popen(shlex.split(command), stdout=PIPE, stderr=STDOUT)
     #try:
     #    return subprocess.check_output(command)
     #except subprocess.CalledProcessError, e:
