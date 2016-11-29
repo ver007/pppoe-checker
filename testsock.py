@@ -53,7 +53,7 @@ class Polserv(object):
         tid = self.tidcount
 
         while True:
-            data = conn.recv(4096)
+            data = conn.recv(2048)
             if not data:
                 conn.close()
                 self.numthreads -= 1
