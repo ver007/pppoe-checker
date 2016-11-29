@@ -46,11 +46,11 @@ class Polserv(object):
     def run(self):
         while True:
             thread.start_new_thread(self.handle, self.sock.accept())
-            if self.pppSession.pppoed_session:
+            if self.pppSession.pppoed_session is not None:
                 self.pppSession.keepAlive()
                 continue
             else:
-                self.pppSession.setPPPoED()
+                continue
 
 
     def handle(self, conn, addr):
@@ -100,7 +100,7 @@ class Polserv(object):
                         except:
                             conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
                         conn.close()
-                        self.numthreads -=1
+                        self.numthreads -= 1
                     # drop current background inited PPPoE Session
                     elif matches["command"] == "dropPPPoE":
                         with self.pppSession.pppoed_session:
