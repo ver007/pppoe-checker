@@ -46,7 +46,8 @@ class Polserv(object):
     def run(self):
         while True:
             thread.start_new_thread(self.handle, self.sock.accept())
-            if self.pppSession.keepAlive():
+            if self.pppSession.pppoed_session:
+                self.pppSession.keepAlive()
                 continue
             else:
                 self.pppSession.setPPPoED()
