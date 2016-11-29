@@ -101,6 +101,8 @@ class Polserv(object):
                     elif matches["command"] == "shellcmd":
                         try:
                             cline = shlex.split(matches["commandline"])
+                            src_ip = self.pppSession.pppoed_session.ip()
+                            cline.append(src_ip)
                             ps = sp.Popen(cline, stdout=sp.PIPE)
                             stdout_value = ps.communicate()[0]
                             conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
