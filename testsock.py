@@ -120,7 +120,7 @@ class Polserv(object):
                         try:
                             result, req = http(self.pppSession.pppoed_session, matches["domain"])
                             if Raw in req:
-                                conn.sendall(json.dumps({"Result": "Success", "value": repr(req)}))
+                                conn.sendall(json.dumps({"Result": "Success", "value": repr(req[Raw])}))
                                 time.sleep(2)
                         except:
                             conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
