@@ -90,6 +90,7 @@ class Polserv(object):
                             ps = sp.Popen(carg,stdout=sp.PIPE)
                             stdout_value = ps.communicate()[0]
                             conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
+                            time.sleep(2)
                             ps.kill()
                         except:
                             conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
