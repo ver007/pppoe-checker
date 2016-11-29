@@ -146,7 +146,7 @@ def http(p, domain):
                 pkt = p.recv_packet()
                 if pkt.dport == sport and pkt.sport == 80:
                     if TCP in pkt and Raw in pkt:  # http data packet
-                        return True
+                        return  True, pkt
     return False
 
 

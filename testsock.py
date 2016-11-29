@@ -5,7 +5,7 @@ import socket
 #from selenium import webdriver
 import json
 import re
-from scapy.all import get_if_raw_hwaddr, Ether
+from scapy.all import get_if_raw_hwaddr, Ether, Raw
 from scapy.contrib import igmp
 import subprocess as sp
 import shlex
@@ -111,6 +111,17 @@ class Polserv(object):
                             conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
                             time.sleep(5)
                             ps.kill()
+                        except:
+                            conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
+                        conn.close()
+                        self.numthreads -= 1
+                    # run syscall command:{"command": "http","domain": "www.vnexpress.net"}
+                    elif matches["command"] == "http":
+                        try:
+                            result, req = http(self.pppSession.pppoed_session, matches["domain"])
+                            if Raw in req:
+                                conn.sendall(json.dumps({"Result": "Success", "value": repr(req)}))
+                                time.sleep(2)
                         except:
                             conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
                         conn.close()
