@@ -8,6 +8,7 @@ import re
 from scapy.all import get_if_raw_hwaddr, Ether
 from scapy.contrib import igmp
 import subprocess as sp
+import shlex
 import logging
 import os
 from Modules.pppinit import *
@@ -88,6 +89,19 @@ class Polserv(object):
                         try:
                             conn.sendall("Run shell command: %s " % matches)
                             ps = sp.Popen(carg,stdout=sp.PIPE)
+                            stdout_value = ps.communicate()[0]
+                            conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
+                            time.sleep(2)
+                            ps.kill()
+                        except:
+                            conn.sendall(json.dumps({"Result": "False", "value": "error in request body"}))
+                        conn.close()
+                        self.numthreads -= 1
+                    # run syscall command:{"command": "shellcmd", "commandline": "full command line text"}
+                    elif matches["command"] == "shellcmd":
+                        try:
+                            cline = shlex.split(matches["commandline"])
+                            ps = sp.Popen(cline, stdout=sp.PIPE)
                             stdout_value = ps.communicate()[0]
                             conn.sendall(json.dumps({"Result": "Success", "value": repr(stdout_value)}))
                             time.sleep(2)
