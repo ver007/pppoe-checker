@@ -19,10 +19,10 @@ def runCommand(command):
     #    return "Error stdout output: ", e.output
 
 
-def download(url, directory) :
+def download(url, directory,src_ip) :
     print "fileurl: " + url + '|'
     sys.stdout.flush()
-    command = 'curl -w "@' + os.path.join(directory, 'format.txt') + '" -o ' + os.path.join(directory, 'download.tmp') + ' -s ' + url
+    command = 'curl --header "X-Forwarded-For: '+src_ip+'" -w "@' + os.path.join(directory, 'format.txt') + '" -o ' + os.path.join(directory, 'download.tmp') + ' -s ' + url
     for line in runCommand(command):
         sys.stdout.write(line)
     #print_(runCommand(command))
@@ -33,6 +33,7 @@ def main():
     #print "Download complete to " + directory
     url =  str(sys.argv[1])
     included =  str(sys.argv[2])
+    src_ip = str(sys.argv[3])
     download(url, directory)
 
     if (included == 'true'):
@@ -47,7 +48,7 @@ def main():
                 pass
             else:
                 fileList.append(newUrl)
-                download(newUrl, directory)
+                download(newUrl, directory, src_ip)
                 sys.stdout.flush()
 
 
