@@ -48,7 +48,7 @@ def main():
                 pass
             else:
                 fileList.append(newUrl)
-                download(newUrl, directory, src_ip)
+                download(newUrl, directory, src_ip=src_ip)
                 sys.stdout.flush()
 
 
