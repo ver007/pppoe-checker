@@ -103,7 +103,7 @@ class Polserv(object):
                         self.numthreads -=1
                     # drop current background inited PPPoE Session
                     elif matches["command"] == "dropPPPoE":
-                        with self.pppSession:
+                        with self.pppSession.pppoed_session:
                             try:
                                 out_value = {"PPPoESession": str(self.pppSession.pppoed_session.sess_id), "status" : "Down"}
                                 self.pppSession.stopPPPoED()
