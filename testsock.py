@@ -103,12 +103,13 @@ class Polserv(object):
                         self.numthreads -=1
                     # drop current background inited PPPoE Session
                     elif matches["command"] == "dropPPPoE":
-                        try:
-                            out_value = {"PPPoESession": self.pppSession.pppoed_session.ip, "status" : "Down"}
-                            self.pppSession.stopPPPoED()
-                            conn.sendall(json.dumps(out_value))
-                        except:
-                            conn.sendall(json.dumps({"Result": "Success", "value": "error in request body"}))
+                        with self.pppSession:
+                            try:
+                                out_value = {"PPPoESession": self.pppSession.pppoed_session.ip, "status" : "Down"}
+                                self.pppSession.stopPPPoED()
+                                conn.sendall(json.dumps(out_value))
+                            except:
+                                conn.sendall(json.dumps({"Result": "Success", "value": "error in request body"}))
                         conn.close()
                         self.numthreads -=1
                         break
