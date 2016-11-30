@@ -66,20 +66,18 @@ def check_probe(source,session,value,id,name,type,ip):
 #	print query
         var.execute(query);
         session.commit()
-configfile='/monitor/config.py'
-if os.path.exists(configfile):
-	execfile(configfile)
-else:
-	print "can't read file config";
-	exit(1)
-session=connect_mysql_db(host,port,user,password,db);
-cur=session.cursor();
-query="select pa.id,p.ip,p.protocol,pa.status,a.thread,c.name,p.type from profile as p, agent as a, profile_agent as pa,channel as c where pa.profile_id=p.id and pa.agent_id=a.id and a.active=1 and pa.monitor=1 and p.channel_id=c.id and pa.check=1 and a.ip='" + ip +"'"
-cur.execute(query);
-rows = cur.fetchall();
-for row in rows:
-	while threading.activeCount() > row[4]:
-		time.sleep(1);
-	t = threading.Thread(target=check_probe, args=(row[2]+'://'+row[1],mysql,row[3],row[0],row[5],row[6],ip,));
-	t.start();
-time.sleep(30);
+
+if __name__ == '__main__':
+    configfile='monitor/config.py'
+    if os.path.exists(configfile):
+        execfile(configfile)
+    else:
+        print "can't read file config";
+        exit(1)
+
+    #query="select pa.id,p.ip,p.protocol,pa.status,a.thread,c.name,p.type from profile as p, agent as a, profile_agent as pa,channel as c where pa.profile_id=p.id and pa.agent_id=a.id and a.active=1 and pa.monitor=1 and p.channel_id=c.id and pa.check=1 and a.ip='" + ip +"'"
+
+    #t = threading.Thread(target=check_probe, args=(row[2]+'://'+row[1],row[3],row[0],row[5],row[6],ip,));
+    t = threading.Thread(target=check_probe, args=("udp" + '://' + "225.1.1.183", "quiet", "0", "kenhtest", "multicast", "183.80.133.114",));
+    t.start();
+    time.sleep(30);
