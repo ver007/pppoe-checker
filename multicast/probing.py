@@ -68,7 +68,7 @@ def check_probe(source,session,value,id,name,type,ip):
         session.commit()
 
 if __name__ == '__main__':
-    configfile='monitor/config.py'
+    configfile='config.py'
     if os.path.exists(configfile):
         execfile(configfile)
     else:
